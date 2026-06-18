@@ -324,7 +324,7 @@ $arrow.r$ #hl[兼顾 AI 压倒性的高速代码生成与质量控制]
 
 #v(0.3em)
 #hl[一旦分层完成, AI 只能在各层内部活动, 不能破坏层次结构.]
-#ref-text[层和 API 边界由 AI 一起分析 PyTorch / JAX 后设计. #text(style: "italic")[(Jin-Guo Liu: tenferro 初期设计, Satoshi Terasaki: 开发支持, tensor4all collaboration: tensor4all-rs 开发)]]
+#ref-text[层和 API 边界由 AI 一起分析 PyTorch / JAX 后设计. #text(style: "italic")[(Jin-Guo Liu: tenferro 初期设计, Satoshi Terasaki: 开发支持, tensor4all collaboration: tensor4all-rs / Tensor4all.jl 开发)]]
 
 == 各层内部的模块化
 

@@ -321,7 +321,7 @@ $arrow.r$ #hl[AIの圧倒的に高速なコード生成と品質管理を両立]
 
 #v(0.1em)
 #hl[一旦分割すれば，AI は各層の中でしか動けず，階層構造を壊せない．]
-#ref-text[層と API 境界は AI とともに PyTorch / JAX を分析して設計． #text(style: "italic")[(Jin-Guo Liu: tenferro 初期設計, Satoshi Terasaki: 開発支援, tensor4all collaboration: tensor4all-rs 開発)]]
+#ref-text[層と API 境界は AI とともに PyTorch / JAX を分析して設計． #text(style: "italic")[(Jin-Guo Liu: tenferro 初期設計, Satoshi Terasaki: 開発支援, tensor4all collaboration: tensor4all-rs / Tensor4all.jl 開発)]]
 
 == 各階層のモジュール化
 

@@ -324,7 +324,7 @@ Split the huge tensor4all-rs into independent layers with distinct roles.
 
 #v(0.3em)
 #hl[Once split, the AI can only operate within each layer and can't break the hierarchy.]
-#ref-text[Layers and API boundaries designed with the AI by analyzing PyTorch / JAX. #text(style: "italic")[(Jin-Guo Liu: initial tenferro design, Satoshi Terasaki: dev support, tensor4all collaboration: tensor4all-rs development)]]
+#ref-text[Layers and API boundaries designed with the AI by analyzing PyTorch / JAX. #text(style: "italic")[(Jin-Guo Liu: initial tenferro design, Satoshi Terasaki: dev support, tensor4all collaboration: tensor4all-rs / Tensor4all.jl development)]]
 
 == Modularizing each layer
 
