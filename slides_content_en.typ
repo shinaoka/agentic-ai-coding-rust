@@ -519,7 +519,7 @@ A suite of automated tests that match inputs and outputs against expected values
 )
 #v(0.3em)
 - Every time the code changes, run the full test suite and immediately detect what broke.
-- #hl[Where Rust helps]: dependency crates *compile in parallel*, and tests *run in parallel by default*. The whole suite runs in tens of seconds.
+- #hl[Where Rust helps]: dependency crates *compile in parallel*, and tests *run in parallel by default*. The whole suite runs in a few minutes.
 - → Even when the AI rewrites an implementation, you get green/red back instantly, a fast feedback loop.
 
 == Pillar 2: Oracle and Benchmark (external standards)
