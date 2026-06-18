@@ -50,16 +50,16 @@ Some call the output of agentic coding #hl["AI slop"]:
   set text(size: 0.84em)
   table(columns: (27%, 1fr), stroke: none, row-gutter: 0.38em, column-gutter: 0.8em, align: (left + top, left + top),
     [*Loss of craft*\ #text(size: 0.72em)[Sinclair Target]],
-    [#text(size: 0.82em, style: "italic")[“…would prefer not to use agentic tools #hl[even if they worked as advertised].”]\ #text(size: 0.72em, fill: gray)[Even if they work, you lose care for the work. #lk("https://sinclairtarget.com/blog/2026/06/01/quality-in-the-age-of-slop/", "Quality in the Age of Slop, 2026")]],
+    [#text(size: 0.82em, style: "italic")[“…would prefer not to use agentic tools #hl[even if they worked as advertised].”]\ #text(size: 0.72em, fill: muted)[Even if they work, you lose care for the work. #lk("https://sinclairtarget.com/blog/2026/06/01/quality-in-the-age-of-slop/", "Quality in the Age of Slop, 2026")]],
 
     [*Maintenance breaks down*\ #text(size: 0.72em)[D. Stenberg (curl)]],
-    [#text(size: 0.82em, style: "italic")[“The current torrent of submissions put a high load on the curl security team…”]\ #text(size: 0.72em, fill: gray)[Buried in AI slop, curl shut down its bug bounty (2026). #lk("https://www.theregister.com/2026/01/21/curl_ends_bug_bounty/", "The Register")]],
+    [#text(size: 0.82em, style: "italic")[“The current torrent of submissions put a high load on the curl security team…”]\ #text(size: 0.72em, fill: muted)[Buried in AI slop, curl shut down its bug bounty (2026). #lk("https://www.theregister.com/2026/01/21/curl_ends_bug_bounty/", "The Register")]],
 
     [*Shared resources degrade*\ #text(size: 0.72em)[Baltes et al.]],
-    [#text(size: 0.82em, style: "italic")[“…a tragedy of the commons, where individual productivity gains #hl[externalize costs onto reviewers, maintainers, and the broader community].”]\ #text(size: 0.72em, fill: gray)[#lk("https://arxiv.org/abs/2603.27249", [“An Endless Stream of AI Slop”, arXiv:2603.27249])]],
+    [#text(size: 0.82em, style: "italic")[“…a tragedy of the commons, where individual productivity gains #hl[externalize costs onto reviewers, maintainers, and the broader community].”]\ #text(size: 0.72em, fill: muted)[#lk("https://arxiv.org/abs/2603.27249", [“An Endless Stream of AI Slop”, arXiv:2603.27249])]],
 
     [*Overhyped showcases*\ #text(size: 0.72em)[Anthropic C compiler]],
-    [#text(size: 0.82em)[A C compiler built with 16 parallel Claude instances (100K lines, ~\$20k). An independent benchmark found it #hl[faster than GCC -O0 but still behind GCC -O2]. Such showcases #hl[grow AI skepticism] when the evaluation target is unclear.]\ #text(size: 0.72em, fill: gray)[#lk("https://www.anthropic.com/engineering/building-c-compiler", "Anthropic") · #lk("https://dineshgdk.substack.com/p/benchmarking-claude-c-compiler", "benchmark")]],
+    [#text(size: 0.82em)[A C compiler built with 16 parallel Claude instances (100K lines, ~\$20k). An independent benchmark found it #hl[faster than GCC -O0 but still behind GCC -O2]. Such showcases #hl[grow AI skepticism] when the evaluation target is unclear.]\ #text(size: 0.72em, fill: muted)[#lk("https://www.anthropic.com/engineering/building-c-compiler", "Anthropic") · #lk("https://dineshgdk.substack.com/p/benchmarking-claude-c-compiler", "benchmark")]],
   )
 }
 #ref-text[Weak optimization is #hl[not proof that AI cannot do it]; it points to a missing performance oracle and a loose human-AI loop.]
@@ -213,7 +213,7 @@ A port of Julia's tensor learning stack to Rust.
   #lk("https://github.com/tensor4all/TensorCrossInterpolation.jl", "TensorCrossInterpolation.jl") / #lk("https://github.com/tensor4all/QuanticsTCI.jl", "QuanticsTCI.jl") etc. / #lk("https://scipost.org/SciPostPhys.18.3.104", "SciPost Phys. 18, 104 (2025)") / #lk("https://tensor4all.org", "tensor4all")
 ]
 #v(0.2em)
-#text(size: 0.82em)[Rust stack (#lk("https://github.com/tensor4all", "github.com/tensor4all")): #lk("https://github.com/tensor4all/tensor4all-rs", "tensor4all-rs") · #lk("https://github.com/tensor4all/tenferro-rs", "tenferro-rs") · #lk("https://github.com/tensor4all/tidu-rs", "tidu-rs") · #lk("https://github.com/tensor4all/Tensor4all.jl", "Tensor4all.jl")]
+#text(size: 0.82em)[GitHub: #lk("https://github.com/tensor4all/tensor4all-rs", "github.com/tensor4all/tensor4all-rs")]
 
 - Started Jan 1, 2026 (originally a winter-break side project to test the "limits" of agentic coding)
 - A handful of humans + AI (from Claude Code to mostly Codex)
@@ -303,29 +303,28 @@ Split the huge tensor4all-rs into independent layers with distinct roles.
   width: 100%,
   stroke: color + 1pt,
   fill: color.lighten(88%),
-  inset: 0.42em,
+  inset: 0.3em,
   radius: 4pt,
 )[
-  #grid(columns: (30%, 70%), gutter: 0.9em, align: horizon,
-    link(url, text(size: 0.98em, weight: "bold", fill: color)[#name]),
-    text(size: 0.82em)[#role],
+  #grid(columns: (36%, 64%), gutter: 0.9em, align: horizon,
+    [#link(url, text(size: 0.95em, weight: "bold", fill: color)[#name])\ #link(url, text(size: 0.6em, fill: muted)[#url.replace("https://", "")])],
+    text(size: 0.8em)[#role],
   )
 ]
 
 #pad(x: 7%)[
   #layer("Tensor4all.jl", "Human-facing interface (Julia, ITensors-compatible)", rgb("#C73E1D"), "https://github.com/tensor4all/Tensor4all.jl")
-  #v(0.28em)
+  #v(0.1em)
   #layer("tensor4all-rs", "Tensor networks: TreeTN / QTT / TCI", rgb("#1565c0"), "https://github.com/tensor4all/tensor4all-rs")
-  #v(0.28em)
+  #v(0.1em)
   #layer("tenferro-rs", "General tensor computation + autodiff + GPU (PyTorch/JAX-like)", rgb("#1565c0"), "https://github.com/tensor4all/tenferro-rs")
-  #v(0.28em)
+  #v(0.1em)
   #layer("tidu-rs", "General-purpose autodiff engine", rgb("#1565c0"), "https://github.com/tensor4all/tidu-rs")
 ]
 
 #v(0.3em)
-Humans design the split structure while discussing with the AI. #hl[Once split, the AI can only operate within each layer and can't break the hierarchy.]
-#ref-text[The layers and API boundaries were decided by analyzing PyTorch / JAX designs (their successes and failures) in detail, together with the AI.\
-#text(style: "italic")[Jin-Guo Liu (initial tenferro design), Satoshi Terasaki (dev support), tensor4all collaboration (tensor4all-rs development)]]
+#hl[Once split, the AI can only operate within each layer and can't break the hierarchy.]
+#ref-text[Layers and API boundaries designed with the AI by analyzing PyTorch / JAX. #text(style: "italic")[(Jin-Guo Liu: initial tenferro design, Satoshi Terasaki: dev support, tensor4all collaboration: tensor4all-rs development)]]
 
 == Modularizing each layer
 
@@ -740,7 +739,7 @@ For #hl[fruitful discussions] while preparing this lecture:
   [#lk("https://qc-hybrid.github.io/CompPhysHack2026/", "CompPhysHack2026")],
   [The hackathon this lecture is built around (official site). See also the #lk("https://atelierarith.github.io/CompPhysHack2026HandsOn/", "Terasaki hands-on material")],
 
-  [#lk("https://www.jinguo-group.science/sustainable-automation/", "Sustainable Automation")\ #text(size: 0.8em, fill: gray)[Jin-Guo Liu]],
+  [#lk("https://www.jinguo-group.science/sustainable-automation/", "Sustainable Automation")\ #text(size: 0.8em, fill: muted)[Jin-Guo Liu]],
   [Discusses how to make AI collaboration sustainable across sessions, weeks, and projects with #hl[CLAUDE.md (memory) + Skills (procedures) + subagents], using the 100K-line ceiling of a C compiler as an example],
 
   [#lk("https://github.com/obra/superpowers", "superpowers")],

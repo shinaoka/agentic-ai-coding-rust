@@ -48,16 +48,16 @@
 #v(0.3em)
 #table(columns: (auto, 1fr), stroke: none, row-gutter: 0.7em, column-gutter: 0.9em, align: (left + top, left + top),
   [*職人性の喪失*\ #text(size: 0.78em)[Sinclair Target]],
-  [#text(size: 0.85em, style: "italic")[“…would prefer not to use agentic tools #hl[even if they worked as advertised].”]\ #text(size: 0.78em, fill: gray)[宣伝通り動いても, 仕事への care を失う. #lk("https://sinclairtarget.com/blog/2026/06/01/quality-in-the-age-of-slop/", "Quality in the Age of Slop, 2026")]],
+  [#text(size: 0.85em, style: "italic")[“…would prefer not to use agentic tools #hl[even if they worked as advertised].”]\ #text(size: 0.78em, fill: muted)[宣伝通り動いても, 仕事への care を失う. #lk("https://sinclairtarget.com/blog/2026/06/01/quality-in-the-age-of-slop/", "Quality in the Age of Slop, 2026")]],
 
   [*保守の崩壊*\ #text(size: 0.78em)[D. Stenberg (curl)]],
-  [#text(size: 0.85em, style: "italic")[“The current torrent of submissions put a high load on the curl security team…”]\ #text(size: 0.78em, fill: gray)[AI slop に埋もれ curl は bug bounty を終了 (2026). #lk("https://www.theregister.com/2026/01/21/curl_ends_bug_bounty/", "The Register")]],
+  [#text(size: 0.85em, style: "italic")[“The current torrent of submissions put a high load on the curl security team…”]\ #text(size: 0.78em, fill: muted)[AI slop に埋もれ curl は bug bounty を終了 (2026). #lk("https://www.theregister.com/2026/01/21/curl_ends_bug_bounty/", "The Register")]],
 
   [*共有資源の劣化*\ #text(size: 0.78em)[Baltes et al.]],
-  [#text(size: 0.85em, style: "italic")[“…a tragedy of the commons, where individual productivity gains #hl[externalize costs onto reviewers, maintainers, and the broader community].”]\ #text(size: 0.78em, fill: gray)[#lk("https://arxiv.org/abs/2603.27249", [“An Endless Stream of AI Slop”, arXiv:2603.27249])]],
+  [#text(size: 0.85em, style: "italic")[“…a tragedy of the commons, where individual productivity gains #hl[externalize costs onto reviewers, maintainers, and the broader community].”]\ #text(size: 0.78em, fill: muted)[#lk("https://arxiv.org/abs/2603.27249", [“An Endless Stream of AI Slop”, arXiv:2603.27249])]],
 
   [*過大広告への反動*\ #text(size: 0.78em)[Anthropic C compiler]],
-  [#text(size: 0.85em)[16 並列 Claude で C コンパイラ (100K 行, ~\$20k) を構築．別 benchmark では #hl[GCC -O0 より速いが GCC -O2 には届かない]．こうした showcase は評価軸がずれると #hl[AI 反対派を増やす]．]\ #text(size: 0.78em, fill: gray)[#lk("https://www.anthropic.com/engineering/building-c-compiler", "Anthropic") · #lk("https://dineshgdk.substack.com/p/benchmarking-claude-c-compiler", "benchmark")]],
+  [#text(size: 0.85em)[16 並列 Claude で C コンパイラ (100K 行, ~\$20k) を構築．別 benchmark では #hl[GCC -O0 より速いが GCC -O2 には届かない]．こうした showcase は評価軸がずれると #hl[AI 反対派を増やす]．]\ #text(size: 0.78em, fill: muted)[#lk("https://www.anthropic.com/engineering/building-c-compiler", "Anthropic") · #lk("https://dineshgdk.substack.com/p/benchmarking-claude-c-compiler", "benchmark")]],
 )
 #ref-text[ただし最適化不足は #hl[AI 不能の証拠ではなく], 性能 oracle と緊密な human-AI loop の不足として読むのが妥当である (後述)．]
 
@@ -210,7 +210,7 @@ Julia の tensor learning stack を Rust に移植．
   #lk("https://github.com/tensor4all/TensorCrossInterpolation.jl", "TensorCrossInterpolation.jl") / #lk("https://github.com/tensor4all/QuanticsTCI.jl", "QuanticsTCI.jl")など / #lk("https://scipost.org/SciPostPhys.18.3.104", "SciPost Phys. 18, 104 (2025)") / #lk("https://tensor4all.org", "tensor4all")
 ]
 #v(0.2em)
-#text(size: 0.82em)[Rust スタック (#lk("https://github.com/tensor4all", "github.com/tensor4all")): #lk("https://github.com/tensor4all/tensor4all-rs", "tensor4all-rs") · #lk("https://github.com/tensor4all/tenferro-rs", "tenferro-rs") · #lk("https://github.com/tensor4all/tidu-rs", "tidu-rs") · #lk("https://github.com/tensor4all/Tensor4all.jl", "Tensor4all.jl")]
+#text(size: 0.82em)[GitHub: #lk("https://github.com/tensor4all/tensor4all-rs", "github.com/tensor4all/tensor4all-rs")]
 
 - 2026年1月1日開始 (元々はagentic codingの「限界」を試す冬休みの自由研究)
 - 人間数名 + AI (Claude CodeからCodexメインへ)
@@ -300,29 +300,28 @@ $arrow.r$ #hl[AIの圧倒的に高速なコード生成と品質管理を両立]
   width: 100%,
   stroke: color + 1pt,
   fill: color.lighten(88%),
-  inset: 0.42em,
+  inset: 0.3em,
   radius: 4pt,
 )[
-  #grid(columns: (30%, 70%), gutter: 0.9em, align: horizon,
-    link(url, text(size: 0.98em, weight: "bold", fill: color)[#name]),
-    text(size: 0.82em)[#role],
+  #grid(columns: (36%, 64%), gutter: 0.9em, align: horizon,
+    [#link(url, text(size: 0.95em, weight: "bold", fill: color)[#name])\ #link(url, text(size: 0.6em, fill: muted)[#url.replace("https://", "")])],
+    text(size: 0.8em)[#role],
   )
 ]
 
 #pad(x: 7%)[
   #layer("Tensor4all.jl", "人間向けインターフェース (Julia, ITensors 互換)", rgb("#C73E1D"), "https://github.com/tensor4all/Tensor4all.jl")
-  #v(0.28em)
+  #v(0.1em)
   #layer("tensor4all-rs", "テンソルネットワーク: TreeTN / QTT / TCI", rgb("#1565c0"), "https://github.com/tensor4all/tensor4all-rs")
-  #v(0.28em)
+  #v(0.1em)
   #layer("tenferro-rs", "汎用テンソル計算 + 自動微分 + GPU (PyTorch/JAX 的)", rgb("#1565c0"), "https://github.com/tensor4all/tenferro-rs")
-  #v(0.28em)
+  #v(0.1em)
   #layer("tidu-rs", "汎用自動微分エンジン", rgb("#1565c0"), "https://github.com/tensor4all/tidu-rs")
 ]
 
-#v(0.3em)
-人間が AI と議論しながら分割構造を設計する．#hl[一旦分割すれば，AI は各層の中でしか動けず，階層構造を壊せない．]
-#ref-text[層と API 境界は，AI とともに PyTorch / JAX のデザイン (成功・失敗例) を詳しく分析して決めた．\
-#text(style: "italic")[Jin-Guo Liu (tenferro 初期設計), Satoshi Terasaki (開発支援), tensor4all collaboration (tensor4all-rs の開発協力)]]
+#v(0.1em)
+#hl[一旦分割すれば，AI は各層の中でしか動けず，階層構造を壊せない．]
+#ref-text[層と API 境界は AI とともに PyTorch / JAX を分析して設計． #text(style: "italic")[(Jin-Guo Liu: tenferro 初期設計, Satoshi Terasaki: 開発支援, tensor4all collaboration: tensor4all-rs 開発)]]
 
 == 各階層のモジュール化
 
@@ -737,7 +736,7 @@ $arrow.r$ #hl[AGENTS.md / REPOSITORY_RULES.md] に書き込む = 正本を育て
   [#lk("https://qc-hybrid.github.io/CompPhysHack2026/", "CompPhysHack2026")],
   [本講義の前提となるハッカソン (公式サイト)．#lk("https://atelierarith.github.io/CompPhysHack2026HandsOn/", "寺崎ハンズオン教材") も参照],
 
-  [#lk("https://www.jinguo-group.science/sustainable-automation/", "Sustainable Automation")\ #text(size: 0.8em, fill: gray)[Jin-Guo Liu]],
+  [#lk("https://www.jinguo-group.science/sustainable-automation/", "Sustainable Automation")\ #text(size: 0.8em, fill: muted)[Jin-Guo Liu]],
   [#hl[CLAUDE.md (記憶) + Skills (手順) + サブエージェント] で AI 協働をセッション・週・プロジェクトを越えて持続可能にする方法を, C コンパイラの 10万行天井を例に論じる],
 
   [#lk("https://github.com/obra/superpowers", "superpowers")],

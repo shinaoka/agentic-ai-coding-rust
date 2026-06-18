@@ -25,7 +25,7 @@
     let cur = here().page()
     let next = slides.filter(h => h.location().page() > cur)
     if next.len() > 0 [
-      #text(size: 0.7em, fill: gray)[Next: #next.first().body]
+      #text(size: 0.7em, fill: muted)[Next: #next.first().body]
     ]
   },
 )

@@ -6,10 +6,13 @@
 // Blue inline link.
 #let lk(url, label) = link(url)[#text(fill: rgb("#2563eb"))[#label]]
 
+// Subdued text color (references, captions, source notes). One knob: darken here to taste.
+#let muted = luma(95)
+
 // Small gray reference line, pinned near the bottom.
 #let ref-text(body) = {
   v(1fr)
-  text(size: 0.8em, fill: gray, body)
+  text(size: 0.8em, fill: muted, body)
 }
 
 // Ponchi-e placeholder: a labeled dashed box describing the sketch to draw later.
