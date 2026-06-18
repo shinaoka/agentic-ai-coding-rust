@@ -212,6 +212,8 @@ superpowers 技能强制 #hl[brainstorm → plan → execute] (各阶段自动�
 #text(size: 0.85em)[
   #lk("https://github.com/tensor4all/TensorCrossInterpolation.jl", "TensorCrossInterpolation.jl") / #lk("https://github.com/tensor4all/QuanticsTCI.jl", "QuanticsTCI.jl") etc. / #lk("https://scipost.org/SciPostPhys.18.3.104", "SciPost Phys. 18, 104 (2025)") / #lk("https://tensor4all.org", "tensor4all")
 ]
+#v(0.2em)
+#text(size: 0.82em)[Rust 实现栈 (#lk("https://github.com/tensor4all", "github.com/tensor4all")): #lk("https://github.com/tensor4all/tensor4all-rs", "tensor4all-rs") · #lk("https://github.com/tensor4all/tenferro-rs", "tenferro-rs") · #lk("https://github.com/tensor4all/tidu-rs", "tidu-rs") · #lk("https://github.com/tensor4all/Tensor4all.jl", "Tensor4all.jl")]
 
 - 2026 年 1 月 1 日开始 (原本是寒假中测试代理式编码“极限”的自由研究)
 - 少数人类 + AI (从 Claude Code 到主要使用 Codex)

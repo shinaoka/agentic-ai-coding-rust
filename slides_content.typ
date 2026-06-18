@@ -209,6 +209,8 @@ Julia の tensor learning stack を Rust に移植．
 #text(size: 0.85em)[
   #lk("https://github.com/tensor4all/TensorCrossInterpolation.jl", "TensorCrossInterpolation.jl") / #lk("https://github.com/tensor4all/QuanticsTCI.jl", "QuanticsTCI.jl")など / #lk("https://scipost.org/SciPostPhys.18.3.104", "SciPost Phys. 18, 104 (2025)") / #lk("https://tensor4all.org", "tensor4all")
 ]
+#v(0.2em)
+#text(size: 0.82em)[Rust スタック (#lk("https://github.com/tensor4all", "github.com/tensor4all")): #lk("https://github.com/tensor4all/tensor4all-rs", "tensor4all-rs") · #lk("https://github.com/tensor4all/tenferro-rs", "tenferro-rs") · #lk("https://github.com/tensor4all/tidu-rs", "tidu-rs") · #lk("https://github.com/tensor4all/Tensor4all.jl", "Tensor4all.jl")]
 
 - 2026年1月1日開始 (元々はagentic codingの「限界」を試す冬休みの自由研究)
 - 人間数名 + AI (Claude CodeからCodexメインへ)
