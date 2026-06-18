@@ -266,7 +266,7 @@ I started from a "monolithic structure": porting the needed parts of ITensors.jl
 #grid(columns: (30%, 70%), gutter: 1em,
   [
     - Fixing things individually can't keep up.
-    - For long-term maintenance, the only option is to *freeze* the philosophy and design rules.
+    - For long-term maintenance, the only option is to *grow one unified set of* philosophy and design rules.
     - #hl[Otherwise complexity keeps growing.]
   ],
   align(center + horizon, image("figures/fig_complexity_growth.svg", width: 100%)),
@@ -691,7 +691,7 @@ MC involves randomness, so an "exact output match" test is hard. Discuss with th
 $arrow.r$ #hl[This isn't a bug, it's a limitation of the algorithm]. Neither the types nor the compiler detect it. What catches it is the oracle.
 
 == Step 5: Write the lessons into the source of truth (finishing Task 1)
-To #hl[hand off to the next session] what Task 1 taught us, freeze it into the rules:
+To #hl[hand off to the next session] what Task 1 taught us, add it to the rules and keep growing them:
 - Below $T_c$, use $chevron.l |M| chevron.r$ for the order parameter ($chevron.l M chevron.r$ doesn't return to 0 in finite time).
 - Boundaries of MC unit testing: only the deterministic parts; verify quasi-deterministically on a small system.
 #v(0.2em)
