@@ -393,7 +393,7 @@ Example: even Julia's broadcast assignment, which *looks* close to the math, doe
 #v(0.25em)
 #hl[aliasing / mutation / allocation are invisible from how a line looks.]
 
-#align(center, text(size: 1.0em)[So far this is language-independent. #hl[So which language is best for verifiability?]])
+#align(center, text(size: 1.0em)[So far this is language-independent. #hl[So which language is a good fit for verifiability?]])
 
 == What Rust is (the minimum for this audience)
 - A systems language from #hl[Mozilla]. Developed for the Firefox implementation, with a stable release (1.0) in 2015.
