@@ -13,6 +13,7 @@ verifiable, robust scientific software.
 |---|---|---|
 | 日本語 (Japanese) | [`slides.pdf`](slides.pdf) | `slides.typ` + `slides_content.typ` |
 | English | [`slides_en.pdf`](slides_en.pdf) | `slides_en.typ` + `slides_content_en.typ` |
+| 简体中文 (Simplified Chinese) | [`slides_zh.pdf`](slides_zh.pdf) | `slides_zh.typ` + `slides_content_zh.typ` |
 
 Shared helpers: `slides_lib.typ`, `slides_meta.typ`. Figures: `figures/`.
 
@@ -23,6 +24,7 @@ Requires [Typst](https://typst.app/) (built with 0.14).
 ```sh
 typst compile slides.typ    slides.pdf      # Japanese
 typst compile slides_en.typ slides_en.pdf   # English
+typst compile slides_zh.typ slides_zh.pdf   # Simplified Chinese
 ```
 
 Most figures are committed as `figures/*.svg`. A few are generated from their

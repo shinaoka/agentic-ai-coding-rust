@@ -45,21 +45,24 @@ Today I don't write a single line, and I don't read code line-by-line either. Ev
 == A common criticism: "AI slop"
 Some call the output of agentic coding #hl["AI slop"]:
 
-#v(0.3em)
-#table(columns: (auto, 1fr), stroke: none, row-gutter: 0.7em, column-gutter: 0.9em, align: (left + top, left + top),
-  [*Loss of craft*\ #text(size: 0.78em)[Sinclair Target]],
-  [#text(size: 0.85em, style: "italic")[“…would prefer not to use agentic tools #hl[even if they worked as advertised].”]\ #text(size: 0.78em, fill: gray)[Even if they work as advertised, you lose your care for the work. #lk("https://sinclairtarget.com/blog/2026/06/01/quality-in-the-age-of-slop/", "Quality in the Age of Slop, 2026")]],
+#v(0.15em)
+#{
+  set text(size: 0.84em)
+  table(columns: (27%, 1fr), stroke: none, row-gutter: 0.38em, column-gutter: 0.8em, align: (left + top, left + top),
+    [*Loss of craft*\ #text(size: 0.72em)[Sinclair Target]],
+    [#text(size: 0.82em, style: "italic")[“…would prefer not to use agentic tools #hl[even if they worked as advertised].”]\ #text(size: 0.72em, fill: gray)[Even if they work, you lose care for the work. #lk("https://sinclairtarget.com/blog/2026/06/01/quality-in-the-age-of-slop/", "Quality in the Age of Slop, 2026")]],
 
-  [*Maintenance breaks down*\ #text(size: 0.78em)[D. Stenberg (curl)]],
-  [#text(size: 0.85em, style: "italic")[“The current torrent of submissions put a high load on the curl security team…”]\ #text(size: 0.78em, fill: gray)[Buried in AI slop, curl shut down its bug bounty (2026). #lk("https://www.theregister.com/2026/01/21/curl_ends_bug_bounty/", "The Register")]],
+    [*Maintenance breaks down*\ #text(size: 0.72em)[D. Stenberg (curl)]],
+    [#text(size: 0.82em, style: "italic")[“The current torrent of submissions put a high load on the curl security team…”]\ #text(size: 0.72em, fill: gray)[Buried in AI slop, curl shut down its bug bounty (2026). #lk("https://www.theregister.com/2026/01/21/curl_ends_bug_bounty/", "The Register")]],
 
-  [*Degradation of shared resources*\ #text(size: 0.78em)[Baltes et al.]],
-  [#text(size: 0.85em, style: "italic")[“…a tragedy of the commons, where individual productivity gains #hl[externalize costs onto reviewers, maintainers, and the broader community].”]\ #text(size: 0.78em, fill: gray)[#lk("https://arxiv.org/abs/2603.27249", [“An Endless Stream of AI Slop”, arXiv:2603.27249])]],
+    [*Shared resources degrade*\ #text(size: 0.72em)[Baltes et al.]],
+    [#text(size: 0.82em, style: "italic")[“…a tragedy of the commons, where individual productivity gains #hl[externalize costs onto reviewers, maintainers, and the broader community].”]\ #text(size: 0.72em, fill: gray)[#lk("https://arxiv.org/abs/2603.27249", [“An Endless Stream of AI Slop”, arXiv:2603.27249])]],
 
-  [*Overhyped showcases*\ #text(size: 0.78em)[Anthropic C compiler]],
-  [#text(size: 0.85em)[A C compiler built with 16 parallel Claude instances (100K lines, ~\$20k) still runs #hl[slower than GCC -O0]. Such under-baked showcases #hl[grow the ranks of AI skeptics].]\ #text(size: 0.78em, fill: gray)[#lk("https://www.anthropic.com/engineering/building-c-compiler", "Anthropic") · #lk("https://dineshgdk.substack.com/p/benchmarking-claude-c-compiler", "benchmark")]],
-)
-#ref-text[That said, the slow compiler is #hl[not proof that AI can't do it]; the cause is the lack of a performance oracle and a tight human-AI loop (more later).]
+    [*Overhyped showcases*\ #text(size: 0.72em)[Anthropic C compiler]],
+    [#text(size: 0.82em)[A C compiler built with 16 parallel Claude instances (100K lines, ~\$20k). An independent benchmark found it #hl[faster than GCC -O0 but still behind GCC -O2]. Such showcases #hl[grow AI skepticism] when the evaluation target is unclear.]\ #text(size: 0.72em, fill: gray)[#lk("https://www.anthropic.com/engineering/building-c-compiler", "Anthropic") · #lk("https://dineshgdk.substack.com/p/benchmarking-claude-c-compiler", "benchmark")]],
+  )
+}
+#ref-text[Weak optimization is #hl[not proof that AI cannot do it]; it points to a missing performance oracle and a loose human-AI loop.]
 
 == The industrial revolution of coding: from craft to factory
 #v(0.8em)
@@ -118,7 +121,7 @@ CLI-type agents are #hl[designed for long-running autonomous execution]. They ar
   [#lk("https://github.com/google-gemini/gemini-cli", "Gemini CLI")], [Google. OSS, has a free tier],
   [#lk("https://www.kimi.com/code", "Kimi CLI")], [Moonshot (China). Model K2.7 Code],
   [#lk("https://opencode.ai/", "OpenCode")], [OSS, provider-agnostic],
-  [#lk("https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent", "Pi")], [Minimal OSS. Add your own extensions and skills to grow it (for minimalists)],
+  [#lk("https://github.com/earendil-works/pi/tree/main/packages/coding-agent", "Pi")], [Minimal OSS. Add your own extensions and skills to grow it (for minimalists)],
 )
 
 == Harness ≠ model
@@ -276,8 +279,9 @@ I started from a "monolithic structure": porting the needed parts of ITensors.jl
 == Fix the "rules," not the "code"
 
 *References*
-- 300 near-misses behind one accident (Heinrich's law?)
-- Aircraft accident investigations emphasize "finding and fixing system problems" over "assigning individual blame"
+- Heinrich pyramid: a safety-engineering rule of thumb that many minor incidents and near misses sit behind one major accident.
+- Aircraft accident investigation: ICAO Annex 13 defines the objective as prevention, not blame.
+#ref-text[#lk("https://skybrary.aero/articles/heinrich-pyramid", "SKYbrary: Heinrich Pyramid") · #lk("https://www.icao.int/sites/default/files/postalhistory/annex_13_aircraft_accident_and_incident_investigation.htm", "ICAO Annex 13") · #lk("https://asrs.arc.nasa.gov/", "NASA ASRS")]
 
 *My approach in agentic coding*
 - Correct the AI's behavior by building "rules" and "institutions"
@@ -366,7 +370,7 @@ Common thread: all of these lower the cost of #hl[a human writing, reading, and 
 //- 厳格なメモリ・所有権の管理 (aliasing起因の自明なバグ排除)
 //- 比較的高速なコンパイル (型の整合性チェックは軽量，並列コンパイル化)
 //
-//(Juliaで基盤ライブラリを書くと，長大なテスト時間，型不安定性に悩まされるのです...)
+//(Juliaで基盤ライブラリを書くと，長大なテスト時間，型不安定性に悩まされる...)
 
 == The criteria for choosing a language change: large-scale development
 The metrics that used to matter all assumed *a human writes and maintains* the code:
@@ -536,9 +540,9 @@ Example: #lk("https://github.com/tensor4all/tenferro-benchmark", "tenferro-bench
   image("figures/fig_complexity_growth.svg", width: 100%),
 )
 
-== AI has no memory
+== AI memory is not the source of truth
 #figimg("figures/no-memory-comic.svg", w: 62%)
-#ref-text[An agent loses its memory across sessions (like Memento), so we keep what we learn as a source of truth. Comic: #lk("https://www.jinguo-group.science/sustainable-automation/", "Jin-Guo Liu: Sustainable Automation")]
+#ref-text[Project decisions should live in the repo's source of truth, not in an AI chat history or memory feature. Comic: #lk("https://www.jinguo-group.science/sustainable-automation/", "Jin-Guo Liu: Sustainable Automation")]
 
 == Grow the source of truth from failures
 Since October 2025, I stopped intervening case by case and shifted toward accumulating my judgments as the #hl[source of truth]. #hl[Generalize from failures and let it grow.]
@@ -579,11 +583,12 @@ $arrow.r$ Now, let's #hl[verify from the outside] whether the cultivated source 
 #h(1em)· https://github.com/tensor4all/tensor-ad-oracles
 ]
 #v(0.3em)
-Just from reading the repos, ChatGPT Pro correctly reconstructed the quality control:
-- #hl[Performance] = tenferro-benchmark / #hl[correctness of AD] = tensor-ad-oracles → it nailed #hl[Pillar 2 (external standards)].
-- #hl[Structural consistency] = CI + repository rules + first-class crate split → it nailed #hl[Pillar 3 (source of truth)].
+In my trial, ChatGPT Pro reconstructed the quality control just by reading the repos:
+- #hl[Performance] = tenferro-benchmark / #hl[correctness of AD] = tensor-ad-oracles → it extracted #hl[Pillar 2 (external standards)].
+- #hl[Structural consistency] = CI + repository rules + first-class crate split → it extracted #hl[Pillar 3 (source of truth)].
 #v(0.2em)
 #align(center, hl[If the source of truth is in place, even a third-party AI can read the design intent.])
+#ref-text[The prompt is the code block above. The target repos are public GitHub repos readable from outside.]
 
 == So what is the human's role?
 #table(columns: (1fr, 1fr), stroke: 0.4pt + gray, inset: 8pt,
@@ -657,7 +662,7 @@ We apply the first half's #hl[superpowers workflow] to 2D Ising. The #hl[one cyc
 == Problem and spec: 2D Ising
 - A statistical-mechanics classic: it has an exact solution (Onsager), so #hl[the oracles are all there]. Being well-known, even a free model can implement it.
 - $H = - J sum_(chevron.l i j chevron.r) s_i s_j$ (periodic boundary), Metropolis updates. Observables = energy / magnetization / specific heat / magnetic susceptibility.
-#ref-text[Based on the Ising chapter of the existing material #lk("https://github.com/saitama-cond-mat/rust-computational-physics-tutorial", "rust-computational-physics-tutorial").]
+#ref-text[Based on the Ising chapter of the existing material #lk("https://github.com/saitama-cond-mat/rust-computational-physics-tutorial", "rust-computational-physics-tutorial"). Exact solution: Onsager (1944).]
 
 == Step 1: Have the AI research and write a design doc
 Don't start writing from a prompt; first have the AI do a #hl[literature review] and write notes (markdown/LaTeX):
@@ -665,7 +670,7 @@ Don't start writing from a prompt; first have the AI do a #hl[literature review]
 - #hl[Binder cumulant]: $U_L = 1 - chevron.l M^4 chevron.r \/ (3 chevron.l M^2 chevron.r^2)$. Curves for different $L$ cross at $T_c$.
 #v(0.2em)
 This math note becomes the core of an #hl[inspectable design doc].
-#ref-text[Template: problem / formulation / assumptions / algorithm / pseudocode / invariants / reference / error metrics / test plan]
+#ref-text[Onsager, Phys. Rev. 65, 117 (1944) · Binder, Z. Phys. B 43, 119 (1981). Template: problem / formulation / assumptions / algorithm / pseudocode / invariants / reference / error metrics / test plan]
 
 == Step 2: What to unit-test, and what to check with the oracle
 MC involves randomness, so an "exact output match" test is hard. Discuss with the AI to separate out #hl[what can be checked deterministically]:
@@ -711,6 +716,7 @@ $arrow.r$ Writing it into #hl[AGENTS.md / REPOSITORY_RULES.md] = one cycle of gr
 - Extension ideas (have it research and design in Step 1):
   - #hl[replica exchange (parallel tempering)]: run several temperatures in parallel and swap neighbors. The high-temperature side crosses the barrier.
   - #hl[cluster algorithm (Wolff / Swendsen-Wang)]: flip a cluster of spins at once and avoid critical slowing down.
+#ref-text[Replica exchange: Hukushima and Nemoto, J. Phys. Soc. Jpn. 65, 1604 (1996). Cluster algorithms: Swendsen and Wang, Phys. Rev. Lett. 58, 86 (1987) · Wolff, Phys. Rev. Lett. 62, 361 (1989).]
 
 == Designing replica exchange: how to place the temperature points
 - The set of temperatures ${T_i}$ is a design decision (Step 1):
