@@ -537,7 +537,7 @@ Example: #lk("https://github.com/tensor4all/tenferro-benchmark", "tenferro-bench
 )
 
 == AI has no memory
-#figimg("figures/no-memory-comic.svg", w: 80%)
+#figimg("figures/no-memory-comic.svg", w: 62%)
 #ref-text[An agent loses its memory across sessions (like Memento), so we keep what we learn as a source of truth. Comic: #lk("https://www.jinguo-group.science/sustainable-automation/", "Jin-Guo Liu: Sustainable Automation")]
 
 == Grow the source of truth from failures

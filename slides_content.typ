@@ -537,7 +537,7 @@ tenferro-rs は #hl[約13万行]，einsum · FFT · 自動微分 (AD) · GPU ま
 )
 
 == AI は記憶を持たない
-#figimg("figures/no-memory-comic.svg", w: 80%)
+#figimg("figures/no-memory-comic.svg", w: 62%)
 #ref-text[AI はセッションを越えて記憶を失う (Memento のように)．だから知見を正本として残す．漫画: #lk("https://www.jinguo-group.science/sustainable-automation/", "Jin-Guo Liu: Sustainable Automation")]
 
 == 正本は失敗から育てる
