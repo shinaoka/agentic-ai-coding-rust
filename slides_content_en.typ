@@ -536,6 +536,10 @@ Example: #lk("https://github.com/tensor4all/tenferro-benchmark", "tenferro-bench
   image("figures/fig_complexity_growth.svg", width: 100%),
 )
 
+== AI has no memory
+#figimg("figures/no-memory-comic.svg", w: 80%)
+#ref-text[An agent loses its memory across sessions (like Memento), so we keep what we learn as a source of truth. Comic: #lk("https://www.jinguo-group.science/sustainable-automation/", "Jin-Guo Liu: Sustainable Automation")]
+
 == Grow the source of truth from failures
 Since October 2025, I stopped intervening case by case and shifted toward accumulating my judgments as the #hl[source of truth]. #hl[Generalize from failures and let it grow.]
 #v(0.3em)
@@ -599,7 +603,7 @@ Just from reading the repos, ChatGPT Pro correctly reconstructed the quality con
 // ============================================================
 
 == Concerns from collaborators
-The new workflow has its objections too (from Tensor4all collaborators):
+The new workflow has its objections too (from tensor4all collaborators):
 #table(columns: (auto, 1fr), stroke: 0.4pt + gray, inset: 8pt,
   [*① library ≠ application*], [Applications have no reference answer],
   [*② Mind the learning stage*], [Asking juniors to adopt a senior's workflow as-is is premature],
@@ -718,6 +722,11 @@ $arrow.r$ Writing it into #hl[AGENTS.md / REPOSITORY_RULES.md] = one cycle of gr
 // ============================================================
 = References
 // ============================================================
+
+== Acknowledgments
+For #hl[fruitful discussions] while preparing this lecture:
+#v(0.3em)
+#lk("https://giggleliu.github.io/", "Jin-Guo Liu") · #lk("https://wangleiphy.github.io/", "Lei Wang") · #lk("https://terasakisatoshi.github.io/", "Satoshi Terasaki")
 
 == References
 #table(columns: (auto, 1fr), stroke: none, row-gutter: 0.6em, column-gutter: 0.9em,
