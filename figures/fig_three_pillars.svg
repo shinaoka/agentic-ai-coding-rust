@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Hiragino Sans, sans-serif">
+  <!-- roof -->
+  <rect x="120" y="70" width="760" height="56" rx="8" fill="#23373b"/>
+  <text x="500" y="108" font-size="26" fill="#fff" font-weight="bold" text-anchor="middle">engineering quality</text>
+  <!-- three pillars -->
+  <g text-anchor="middle">
+    <rect x="150" y="160" width="200" height="280" rx="10" fill="#fdf1e3" stroke="#eb811b" stroke-width="3"/>
+    <text x="250" y="290" font-size="22" fill="#23373b" font-weight="bold">reference</text>
+    <text x="250" y="320" font-size="22" fill="#23373b" font-weight="bold">oracles</text>
+    <text x="250" y="362" font-size="16" fill="#666">finite-diff /</text>
+    <text x="250" y="384" font-size="16" fill="#666">Torch reference</text>
+
+    <rect x="400" y="160" width="200" height="280" rx="10" fill="#fdf1e3" stroke="#eb811b" stroke-width="3"/>
+    <text x="500" y="290" font-size="22" fill="#23373b" font-weight="bold">unit-test</text>
+    <text x="500" y="320" font-size="22" fill="#23373b" font-weight="bold">suite</text>
+    <text x="500" y="362" font-size="16" fill="#666">per-file</text>
+    <text x="500" y="384" font-size="16" fill="#666">coverage</text>
+
+    <rect x="650" y="160" width="200" height="280" rx="10" fill="#fdf1e3" stroke="#eb811b" stroke-width="3"/>
+    <text x="750" y="290" font-size="22" fill="#23373b" font-weight="bold">reproducible</text>
+    <text x="750" y="320" font-size="22" fill="#23373b" font-weight="bold">benchmark</text>
+    <text x="750" y="362" font-size="16" fill="#666">invariants /</text>
+    <text x="750" y="384" font-size="16" fill="#666">residual checks</text>
+  </g>
+  <!-- base -->
+  <rect x="120" y="455" width="760" height="40" rx="8" fill="#23373b"/>
+  <text x="500" y="483" font-size="18" fill="#fff" text-anchor="middle">tenferro-rs (約13万行)</text>
+</svg>

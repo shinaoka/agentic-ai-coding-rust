@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" font-family="Helvetica, Arial, sans-serif">
+  <text x="500" y="44" font-size="23" fill="#23373b" font-weight="bold" text-anchor="middle">Fix each product vs. fix the mold</text>
+  <!-- axes -->
+  <line x1="120" y1="440" x2="920" y2="440" stroke="#23373b" stroke-width="3"/>
+  <line x1="120" y1="440" x2="120" y2="78" stroke="#23373b" stroke-width="3"/>
+  <polygon points="920,440 902,431 902,449" fill="#23373b"/>
+  <polygon points="120,78 111,96 129,96" fill="#23373b"/>
+  <text x="525" y="485" font-size="20" fill="#23373b" text-anchor="middle">Time &#8594;</text>
+  <text x="78" y="260" font-size="20" fill="#23373b" text-anchor="middle" transform="rotate(-90 78 260)">Complexity &#8594;</text>
+
+  <!-- patchwork staircase (rising, unbounded) -->
+  <polyline points="120,420 250,420 250,380 380,380 380,330 510,330 510,270 640,270 640,200 770,200 770,120 900,120"
+            fill="none" stroke="#cc0000" stroke-width="4"/>
+  <text x="150" y="135" font-size="19" fill="#cc0000" font-weight="bold">Fix each product</text>
+  <text x="150" y="160" font-size="15" fill="#cc0000">&#8594; complexity keeps growing</text>
+
+  <!-- institutionalization (bounded sawtooth: accumulate, then a rule pulls it back down) -->
+  <polyline points="120,418 210,360 232,408 350,356 372,404 490,352 512,400 630,350 652,398 770,348 792,396 900,394"
+            fill="none" stroke="#eb811b" stroke-width="4"/>
+  <text x="545" y="305" font-size="19" fill="#eb811b" font-weight="bold">Fix the mold (rules / oracle)</text>
+  <text x="545" y="330" font-size="15" fill="#eb811b">each failure &#8594; a new rule</text>
+</svg>

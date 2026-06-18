@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="50 105 905 315" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="as" markerWidth="14" markerHeight="14" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#eb811b"/>
+    </marker>
+  </defs>
+  <!-- left: monolith -->
+  <rect x="60" y="190" width="200" height="160" rx="12" fill="#fdf1e3" stroke="#eb811b" stroke-width="3"/>
+  <text x="160" y="260" font-size="18" fill="#23373b" text-anchor="middle">tenferro</text>
+  <text x="160" y="288" font-size="18" fill="#23373b" text-anchor="middle">(facade)</text>
+  <!-- arrow -->
+  <line x1="270" y1="270" x2="370" y2="270" stroke="#eb811b" stroke-width="4" marker-end="url(#as)"/>
+  <text x="320" y="250" font-size="15" fill="#666" text-anchor="middle">split</text>
+  <!-- right: first-class crates -->
+  <g font-size="17" fill="#23373b" text-anchor="middle">
+    <rect x="400" y="120" width="250" height="60" rx="9" fill="#fff" stroke="#23373b" stroke-width="2"/><text x="525" y="157">tenferro-tensor</text>
+    <rect x="690" y="120" width="250" height="60" rx="9" fill="#fff" stroke="#23373b" stroke-width="2"/><text x="815" y="157">tenferro-gpu</text>
+    <rect x="400" y="200" width="250" height="60" rx="9" fill="#fff" stroke="#23373b" stroke-width="2"/><text x="525" y="237">tenferro-runtime</text>
+    <rect x="690" y="200" width="250" height="60" rx="9" fill="#fff" stroke="#23373b" stroke-width="2"/><text x="815" y="237">tenferro-ad</text>
+    <rect x="400" y="280" width="250" height="60" rx="9" fill="#fff" stroke="#23373b" stroke-width="2"/><text x="525" y="317">tenferro-linalg</text>
+    <rect x="690" y="280" width="250" height="60" rx="9" fill="#fff" stroke="#23373b" stroke-width="2"/><text x="815" y="317">tenferro-fft</text>
+  </g>
+  <text x="670" y="400" font-size="20" fill="#cc0000" text-anchor="middle" font-weight="bold">No root facade. Each family is a first-class crate.</text>
+</svg>

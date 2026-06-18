@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" font-family="Hiragino Sans, sans-serif">
+  <defs>
+    <marker id="ai" markerWidth="14" markerHeight="14" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#eb811b"/>
+    </marker>
+  </defs>
+  <!-- left: human review -->
+  <rect x="70" y="150" width="300" height="220" rx="14" fill="#f4f4f4" stroke="#cc0000" stroke-width="3"/>
+  <circle cx="220" cy="220" r="30" fill="#cc0000"/>
+  <text x="220" y="290" font-size="20" fill="#23373b" text-anchor="middle" font-weight="bold">人間の目視レビュー</text>
+  <text x="220" y="322" font-size="16" fill="#cc0000" text-anchor="middle">= 有限の希少資源</text>
+  <text x="220" y="346" font-size="16" fill="#cc0000" text-anchor="middle">= ボトルネック</text>
+  <!-- arrow -->
+  <line x1="385" y1="260" x2="495" y2="260" stroke="#eb811b" stroke-width="5" marker-end="url(#ai)"/>
+  <text x="440" y="240" font-size="16" fill="#666" text-anchor="middle">抗う主体を移す</text>
+  <!-- right: institution -->
+  <rect x="520" y="120" width="410" height="280" rx="14" fill="#fdf1e3" stroke="#eb811b" stroke-width="3"/>
+  <text x="725" y="158" font-size="20" fill="#eb811b" text-anchor="middle" font-weight="bold">制度 (正本)</text>
+  <g font-size="17" fill="#23373b" text-anchor="middle">
+    <rect x="545" y="180" width="170" height="50" rx="8" fill="#fff" stroke="#999"/><text x="630" y="211">rules</text>
+    <rect x="735" y="180" width="170" height="50" rx="8" fill="#fff" stroke="#999"/><text x="820" y="211">oracle</text>
+    <rect x="545" y="245" width="170" height="50" rx="8" fill="#fff" stroke="#999"/><text x="630" y="276">benchmark</text>
+    <rect x="735" y="245" width="170" height="50" rx="8" fill="#fff" stroke="#999"/><text x="820" y="276">design</text>
+    <rect x="545" y="310" width="360" height="50" rx="8" fill="#fff" stroke="#999"/><text x="725" y="341">worklogs</text>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" font-family="Hiragino Sans, sans-serif">
+  <!-- center lattice -->
+  <text x="500" y="265" font-size="18" fill="#23373b" text-anchor="middle" font-weight="bold">2D Ising</text>
+  <g>
+    <!-- 4x4 spin grid -->
+    <g font-size="22" text-anchor="middle">
+      <!-- generate manually: alternating arrows up/down -->
+      <g fill="#eb811b">
+        <text x="440" y="300">↑</text><text x="470" y="300">↓</text><text x="500" y="300">↑</text><text x="530" y="300">↑</text>
+        <text x="440" y="330">↓</text><text x="470" y="330">↑</text><text x="500" y="330">↓</text><text x="530" y="330">↑</text>
+        <text x="440" y="360">↑</text><text x="470" y="360">↑</text><text x="500" y="360">↓</text><text x="530" y="360">↓</text>
+        <text x="440" y="390">↓</text><text x="470" y="390">↓</text><text x="500" y="390">↑</text><text x="530" y="390">↑</text>
+      </g>
+    </g>
+    <rect x="420" y="275" width="135" height="135" fill="none" stroke="#23373b" stroke-width="2"/>
+  </g>
+  <!-- 4 oracle callouts -->
+  <g font-size="16" fill="#23373b">
+    <rect x="60"  y="60"  width="320" height="80" rx="10" fill="#fdf1e3" stroke="#eb811b" stroke-width="2"/>
+    <text x="75" y="92" font-weight="bold">極限</text>
+    <text x="75" y="120" font-size="15">T→0 で |M|→1, T→∞ で M→0</text>
+
+    <rect x="620" y="60"  width="320" height="80" rx="10" fill="#fdf1e3" stroke="#eb811b" stroke-width="2"/>
+    <text x="635" y="92" font-weight="bold">対称性 (Z2)</text>
+    <text x="635" y="120" font-size="15">h=0 で 〈M〉=0 → 〈|M|〉 を見る</text>
+
+    <rect x="60"  y="410" width="320" height="80" rx="10" fill="#fdf1e3" stroke="#eb811b" stroke-width="2"/>
+    <text x="75" y="442" font-weight="bold">厳密解 (Onsager)</text>
+    <text x="75" y="470" font-size="15">Tc ≈ 2.269, ピークと磁化曲線</text>
+
+    <rect x="620" y="410" width="320" height="80" rx="10" fill="#fdf1e3" stroke="#eb811b" stroke-width="2"/>
+    <text x="635" y="442" font-weight="bold">residual</text>
+    <text x="635" y="470" font-size="15">エネルギーの離散変化</text>
+  </g>
+  <!-- connectors -->
+  <g stroke="#bbb" stroke-width="1.5">
+    <line x1="380" y1="120" x2="430" y2="270"/>
+    <line x1="620" y1="120" x2="545" y2="270"/>
+    <line x1="380" y1="430" x2="430" y2="400"/>
+    <line x1="620" y1="430" x2="545" y2="400"/>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" font-family="Hiragino Sans, sans-serif">
+  <!-- outer facade -->
+  <rect x="200" y="90" width="600" height="380" rx="14" fill="#fdf1e3" stroke="#eb811b" stroke-width="4"/>
+  <text x="500" y="125" font-size="22" fill="#eb811b" font-weight="bold" text-anchor="middle">tenferro (facade)</text>
+  <!-- nested modules -->
+  <g font-size="17" fill="#23373b" text-anchor="middle">
+    <rect x="240" y="150" width="240" height="60" rx="8" fill="#fff" stroke="#999"/><text x="360" y="187">tensor core</text>
+    <rect x="520" y="150" width="240" height="60" rx="8" fill="#fff" stroke="#999"/><text x="640" y="187">gpu backend</text>
+    <rect x="240" y="230" width="240" height="60" rx="8" fill="#fff" stroke="#999"/><text x="360" y="267">runtime</text>
+    <rect x="520" y="230" width="240" height="60" rx="8" fill="#fff" stroke="#999"/><text x="640" y="267">autodiff</text>
+    <rect x="240" y="310" width="520" height="60" rx="8" fill="#fff" stroke="#999"/><text x="500" y="347">linalg / einsum / fft</text>
+  </g>
+  <text x="500" y="430" font-size="18" fill="#cc0000" text-anchor="middle" font-weight="bold">一見速い. だが境界が曖昧で保守困難.</text>
+</svg>

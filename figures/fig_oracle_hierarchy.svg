@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Hiragino Sans, sans-serif">
+  <text x="500" y="48" font-size="24" fill="#23373b" font-weight="bold" text-anchor="middle">oracle 階層 — 何を正しさの基準にするか</text>
+  <g text-anchor="middle" font-size="19">
+    <!-- 7 layers -->
+    <rect x="200" y="75"  width="600" height="56" rx="8" fill="#f4f4f4" stroke="#23373b" stroke-width="2"/>
+    <text x="500" y="111" fill="#23373b">unit test — API contract・小さい deterministic 挙動</text>
+    <rect x="200" y="138" width="600" height="56" rx="8" fill="#fdf1e3" stroke="#eb811b" stroke-width="2"/>
+    <text x="500" y="174" fill="#23373b">property test — 対称性・保存則・positivity</text>
+    <rect x="200" y="201" width="600" height="56" rx="8" fill="#f4f4f4" stroke="#23373b" stroke-width="2"/>
+    <text x="500" y="237" fill="#23373b">reference oracle — finite-diff・dense・prototype</text>
+    <rect x="200" y="264" width="600" height="56" rx="8" fill="#fdf1e3" stroke="#eb811b" stroke-width="2"/>
+    <text x="500" y="300" fill="#23373b">known limits — 極限・自明系・解析解</text>
+    <rect x="200" y="327" width="600" height="56" rx="8" fill="#f4f4f4" stroke="#23373b" stroke-width="2"/>
+    <text x="500" y="363" fill="#23373b">residual / convergence — 残差・収束</text>
+    <rect x="200" y="390" width="600" height="56" rx="8" fill="#fdf1e3" stroke="#eb811b" stroke-width="2"/>
+    <text x="500" y="426" fill="#23373b">benchmark — 性能・メモリ regression</text>
+    <rect x="200" y="453" width="600" height="56" rx="8" fill="#f4f4f4" stroke="#23373b" stroke-width="2"/>
+    <text x="500" y="489" fill="#23373b">provenance — 由来の記録</text>
+  </g>
+  <!-- side note -->
+  <text x="60" y="200" font-size="16" fill="#888">弱</text>
+  <text x="60" y="430" font-size="16" fill="#888">強</text>
+  <line x1="70" y1="215" x2="70" y2="415" stroke="#ccc" stroke-width="2" marker-end="url(#a)"/>
+</svg>

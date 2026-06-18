@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Hiragino Sans, sans-serif">
+  <!-- left box -->
+  <rect x="40" y="90" width="380" height="380" rx="14" fill="#f4f4f4" stroke="#23373b" stroke-width="3"/>
+  <text x="230" y="140" font-size="26" fill="#23373b" font-weight="bold" text-anchor="middle">Readable</text>
+  <text x="230" y="172" font-size="26" fill="#23373b" font-weight="bold" text-anchor="middle">source code</text>
+  <text x="230" y="240" font-size="20" fill="#444" text-anchor="middle">人間が一見して</text>
+  <text x="230" y="270" font-size="20" fill="#444" text-anchor="middle">読みやすいコード</text>
+  <text x="230" y="360" font-size="18" fill="#888" text-anchor="middle">表面的な読みやすさ</text>
+  <text x="230" y="388" font-size="18" fill="#888" text-anchor="middle">(surface readability)</text>
+  <!-- not equal -->
+  <text x="500" y="300" font-size="64" fill="#cc0000" font-weight="bold" text-anchor="middle">&#8800;</text>
+  <!-- right box -->
+  <rect x="580" y="90" width="380" height="380" rx="14" fill="#fdf1e3" stroke="#eb811b" stroke-width="3"/>
+  <text x="770" y="140" font-size="26" fill="#23373b" font-weight="bold" text-anchor="middle">Inspectable</text>
+  <text x="770" y="172" font-size="26" fill="#23373b" font-weight="bold" text-anchor="middle">implementation</text>
+  <text x="770" y="232" font-size="19" fill="#444" text-anchor="middle">数式・擬似コード</text>
+  <text x="770" y="262" font-size="19" fill="#444" text-anchor="middle">invariants・tests</text>
+  <text x="770" y="292" font-size="19" fill="#444" text-anchor="middle">compiler feedback</text>
+  <text x="770" y="322" font-size="19" fill="#444" text-anchor="middle">AI audit</text>
+  <text x="770" y="392" font-size="18" fill="#eb811b" text-anchor="middle">で検査できる</text>
+</svg>

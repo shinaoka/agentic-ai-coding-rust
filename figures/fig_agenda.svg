@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" font-family="Hiragino Sans, sans-serif">
+  <!-- Part I -->
+  <text x="60" y="90" font-size="22" fill="#23373b" font-weight="bold">Part I 講義 (13:00–15:00)</text>
+  <g font-size="15" fill="#fff" text-anchor="middle">
+    <rect x="120" y="110" width="100"  height="60" fill="#eb811b"/>
+    <text x="170" y="138">導入</text><text x="170" y="158" font-size="12">15</text>
+    <rect x="220" y="110" width="233" height="60" fill="#d6731a"/>
+    <text x="336" y="138">第1+2幕</text><text x="336" y="158" font-size="12">35</text>
+    <rect x="453" y="110" width="200" height="60" fill="#eb811b"/>
+    <text x="553" y="138">判断軸</text><text x="553" y="158" font-size="12">30</text>
+    <rect x="653" y="110" width="67"  height="60" fill="#bdbdbd"/>
+    <text x="686" y="144" font-size="12">休憩</text>
+    <rect x="720" y="110" width="200" height="60" fill="#d6731a"/>
+    <text x="820" y="138">正本を育てる</text><text x="820" y="158" font-size="12">30</text>
+  </g>
+  <!-- Part II -->
+  <text x="60" y="270" font-size="22" fill="#23373b" font-weight="bold">Part II ハンズオン (15:00–17:00) — 2D Ising</text>
+  <g font-size="15" fill="#fff" text-anchor="middle">
+    <rect x="120" y="290" width="167" height="60" fill="#2E86AB"/>
+    <text x="203" y="318">検証設計</text><text x="203" y="338" font-size="12">25</text>
+    <rect x="287" y="290" width="267" height="60" fill="#236f8f"/>
+    <text x="420" y="318">AI実装+読む</text><text x="420" y="338" font-size="12">40</text>
+    <rect x="554" y="290" width="67"  height="60" fill="#bdbdbd"/>
+    <text x="587" y="324" font-size="12">休憩</text>
+    <rect x="621" y="290" width="233" height="60" fill="#2E86AB"/>
+    <text x="737" y="318">検証+バグ注入</text><text x="737" y="338" font-size="12">35</text>
+    <rect x="854" y="290" width="66"  height="60" fill="#236f8f"/>
+    <text x="887" y="324" font-size="12">まとめ</text>
+  </g>
+  <!-- axis -->
+  <line x1="120" y1="400" x2="920" y2="400" stroke="#999" stroke-width="2"/>
+  <g font-size="14" fill="#666" text-anchor="middle">
+    <text x="120" y="424">13:00</text>
+    <text x="320" y="424">14:00</text>
+    <text x="520" y="424">15:00</text>
+    <text x="720" y="424">16:00</text>
+    <text x="920" y="424">17:00</text>
+  </g>
+</svg>

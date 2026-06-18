@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Hiragino Sans, sans-serif">
+  <defs>
+    <marker id="ah" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#eb811b"/>
+    </marker>
+  </defs>
+  <!-- 5 nodes around a circle, center 500,290 r=200 -->
+  <!-- node helper drawn manually -->
+  <g font-size="20" fill="#23373b" text-anchor="middle">
+    <!-- top -->
+    <rect x="385" y="55" width="230" height="64" rx="10" fill="#fdf1e3" stroke="#eb811b" stroke-width="3"/>
+    <text x="500" y="93">AI が実装する</text>
+    <!-- right -->
+    <rect x="715" y="200" width="240" height="64" rx="10" fill="#fdf1e3" stroke="#eb811b" stroke-width="3"/>
+    <text x="835" y="231">test/oracle/benchmark</text>
+    <text x="835" y="253" font-size="16" fill="#666">で問題が出る</text>
+    <!-- bottom right -->
+    <rect x="620" y="430" width="250" height="64" rx="10" fill="#fdf1e3" stroke="#eb811b" stroke-width="3"/>
+    <text x="745" y="461">失敗の型を一般化する</text>
+    <!-- bottom left -->
+    <rect x="130" y="430" width="270" height="64" rx="10" fill="#fdf1e3" stroke="#eb811b" stroke-width="3"/>
+    <text x="265" y="455" font-size="18">rules/design/oracle</text>
+    <text x="265" y="479" font-size="18">に反映する</text>
+    <!-- left -->
+    <rect x="45" y="200" width="240" height="64" rx="10" fill="#23373b" stroke="#23373b" stroke-width="3"/>
+    <text x="165" y="231" fill="#fff">次の実装が</text>
+    <text x="165" y="253" fill="#fff" font-size="16">その制約を受ける</text>
+  </g>
+  <!-- arrows along the cycle -->
+  <g fill="none" stroke="#eb811b" stroke-width="3" marker-end="url(#ah)">
+    <path d="M615,95 Q760,120 800,196"/>
+    <path d="M820,266 Q800,370 760,426"/>
+    <path d="M615,462 L405,462"/>
+    <path d="M205,426 Q150,360 150,268"/>
+    <path d="M200,196 Q330,110 383,98"/>
+  </g>
+</svg>

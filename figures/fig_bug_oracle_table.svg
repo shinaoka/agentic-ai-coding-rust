@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" font-family="Hiragino Sans, sans-serif">
+  <text x="500" y="50" font-size="22" fill="#23373b" font-weight="bold" text-anchor="middle">符号反転バグを, 何が捕まえるか</text>
+  <!-- header -->
+  <rect x="120" y="80" width="500" height="56" fill="#23373b"/>
+  <rect x="620" y="80" width="260" height="56" fill="#23373b"/>
+  <text x="370" y="116" font-size="19" fill="#fff" text-anchor="middle">検査</text>
+  <text x="750" y="116" font-size="19" fill="#fff" text-anchor="middle">捕まえたか</text>
+  <!-- rows -->
+  <g font-size="18" fill="#23373b">
+    <!-- row helper: y top -->
+    <g>
+      <rect x="120" y="136" width="500" height="56" fill="#f7f7f7" stroke="#ddd"/>
+      <rect x="620" y="136" width="260" height="56" fill="#fbeaea" stroke="#ddd"/>
+      <text x="140" y="172">コンパイル</text>
+      <text x="750" y="173" font-size="26" fill="#cc0000" text-anchor="middle">×</text>
+    </g>
+    <g>
+      <rect x="120" y="192" width="500" height="56" fill="#fff" stroke="#ddd"/>
+      <rect x="620" y="192" width="260" height="56" fill="#fbeaea" stroke="#ddd"/>
+      <text x="140" y="228">型チェック</text>
+      <text x="750" y="229" font-size="26" fill="#cc0000" text-anchor="middle">×</text>
+    </g>
+    <g>
+      <rect x="120" y="248" width="500" height="56" fill="#f7f7f7" stroke="#ddd"/>
+      <rect x="620" y="248" width="260" height="56" fill="#e7f3ea" stroke="#ddd"/>
+      <text x="140" y="284">対称性 (Z2): 〈|M|〉</text>
+      <text x="750" y="285" font-size="24" fill="#2e8b46" text-anchor="middle">○</text>
+    </g>
+    <g>
+      <rect x="120" y="304" width="500" height="56" fill="#fff" stroke="#ddd"/>
+      <rect x="620" y="304" width="260" height="56" fill="#e7f3ea" stroke="#ddd"/>
+      <text x="140" y="340">極限 (T→0, T→∞)</text>
+      <text x="750" y="341" font-size="24" fill="#2e8b46" text-anchor="middle">○</text>
+    </g>
+    <g>
+      <rect x="120" y="360" width="500" height="56" fill="#f7f7f7" stroke="#ddd"/>
+      <rect x="620" y="360" width="260" height="56" fill="#e7f3ea" stroke="#ddd"/>
+      <text x="140" y="396">Onsager Tc / 磁化曲線</text>
+      <text x="750" y="397" font-size="24" fill="#2e8b46" text-anchor="middle">○</text>
+    </g>
+  </g>
+  <text x="500" y="470" font-size="19" fill="#cc0000" text-anchor="middle" font-weight="bold">Rust は物理バグを止めない. oracle が止める.</text>
+</svg>

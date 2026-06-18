@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" font-family="Hiragino Sans, sans-serif">
+  <defs>
+    <marker id="ar" markerWidth="14" markerHeight="14" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#23373b"/>
+    </marker>
+  </defs>
+  <g text-anchor="middle">
+    <rect x="60"  y="180" width="180" height="110" rx="12" fill="#fbeaea" stroke="#cc0000" stroke-width="3"/>
+    <text x="150" y="230" font-size="18" fill="#23373b">生成速度 ↑</text>
+    <text x="150" y="258" font-size="14" fill="#666">agentic coding</text>
+
+    <rect x="300" y="180" width="180" height="110" rx="12" fill="#fbeaea" stroke="#cc0000" stroke-width="3"/>
+    <text x="390" y="230" font-size="18" fill="#23373b">エントロピー ↑</text>
+    <text x="390" y="258" font-size="14" fill="#666">AI slop の危険</text>
+
+    <rect x="540" y="180" width="180" height="110" rx="12" fill="#fdf1e3" stroke="#eb811b" stroke-width="3"/>
+    <text x="630" y="222" font-size="18" fill="#23373b">正本で抗う</text>
+    <text x="630" y="250" font-size="14" fill="#666">rules / oracle</text>
+    <text x="630" y="270" font-size="14" fill="#666">benchmark</text>
+
+    <rect x="780" y="180" width="180" height="110" rx="12" fill="#23373b"/>
+    <text x="870" y="222" font-size="18" fill="#fff">人間は</text>
+    <text x="870" y="250" font-size="16" fill="#fff">性質を定義</text>
+    <text x="870" y="272" font-size="13" fill="#d6c6b7">(良い issue)</text>
+  </g>
+  <g fill="none" stroke="#23373b" stroke-width="3" marker-end="url(#ar)">
+    <line x1="240" y1="235" x2="298" y2="235"/>
+    <line x1="480" y1="235" x2="538" y2="235"/>
+    <line x1="720" y1="235" x2="778" y2="235"/>
+  </g>
+  <text x="500" y="360" font-size="20" fill="#eb811b" text-anchor="middle" font-weight="bold">書ける人より, 満たすべき性質を定義できる人</text>
+</svg>

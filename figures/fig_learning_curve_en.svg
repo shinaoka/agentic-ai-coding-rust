@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" font-family="Helvetica, Arial, sans-serif">
+  <!-- axes -->
+  <line x1="120" y1="440" x2="930" y2="440" stroke="#23373b" stroke-width="3"/>
+  <line x1="120" y1="440" x2="120" y2="70" stroke="#23373b" stroke-width="3"/>
+  <text x="540" y="485" font-size="20" fill="#23373b" text-anchor="middle">Effort to proficiency →</text>
+  <text x="78" y="255" font-size="20" fill="#23373b" text-anchor="middle" transform="rotate(-90 78 255)">Control &amp; safety reachable →</text>
+  <!-- Python/Julia: gentle rise, then flat plateau (monotonic) -->
+  <path d="M120,440 C170,300 250,238 360,225 C520,216 700,212 900,210" fill="none" stroke="#2E86AB" stroke-width="4"/>
+  <text x="600" y="240" font-size="19" fill="#2E86AB" font-weight="bold">Python / Julia (gentle)</text>
+  <!-- Rust: slow start, steep middle, then flat plateau (monotonic, no dip) -->
+  <path d="M120,440 C260,438 320,425 380,400 C480,360 560,200 660,140 C760,108 840,98 900,94" fill="none" stroke="#eb811b" stroke-width="4"/>
+  <text x="700" y="120" font-size="19" fill="#eb811b" font-weight="bold">Rust (steep at first)</text>
+  <!-- AI absorbs the steep early part -->
+  <rect x="360" y="150" width="290" height="260" fill="#eb811b" fill-opacity="0.10" stroke="none"/>
+  <line x1="505" y1="380" x2="505" y2="300" stroke="#cc0000" stroke-width="2.5" marker-end="url(#lcar)"/>
+  <defs>
+    <marker id="lcar" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto">
+      <path d="M0,0 L11,6 L0,12 z" fill="#cc0000"/>
+    </marker>
+  </defs>
+  <text x="505" y="400" font-size="17" fill="#cc0000" font-weight="bold" text-anchor="middle">AI absorbs this steep part</text>
+</svg>
