@@ -601,7 +601,7 @@ Just from reading the repos, ChatGPT Pro correctly reconstructed the quality con
 == Concerns from collaborators
 The new workflow has its objections too (from Tensor4all collaborators):
 #table(columns: (auto, 1fr), stroke: 0.4pt + gray, inset: 8pt,
-  [*① library ≠ application*], [Applications have no reference answer; sign and prefactor bugs dominate],
+  [*① library ≠ application*], [Applications have no reference answer],
   [*② Mind the learning stage*], [Asking juniors to adopt a senior's workflow as-is is premature],
   [*③ Julia's readability*], [Small notebooks make it #hl[easy to check consistency with the math by eye]],
 )
