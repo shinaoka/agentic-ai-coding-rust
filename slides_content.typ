@@ -319,15 +319,14 @@ $arrow.r$ #hl[AIの圧倒的に高速なコード生成と品質管理を両立]
 
 #v(0.3em)
 人間が AI と議論しながら分割構造を設計する．#hl[一旦分割すれば，AI は各層の中でしか動けず，階層構造を壊せない．]
-#ref-text[層と API 境界は，AI とともに PyTorch / JAX のデザイン (成功・失敗例) を詳しく分析して決めた．]
+#ref-text[層と API 境界は，AI とともに PyTorch / JAX のデザイン (成功・失敗例) を詳しく分析して決めた．\
+#text(style: "italic")[Jin-Guo Liu (tenferro 初期設計), Satoshi Terasaki (開発支援), tensor4all collaboration (tensor4all-rs の開発協力)]]
 
 == 各階層のモジュール化
 
-tenferroの内部もモジュール化されている．
-#figimg("figures/fig_crate_split.svg", w: 60%)
-//#ref-text[0e3ffa76 (2026-05-26) Refactor crate boundaries without root facade (\#900)]
-Rust では シンボルの公開性をモジュール階層に沿って細かく制御可能．
-AIエージェントが勝手にprivateなシンボルを外からimportできない．
+#align(center, image("figures/tenferro-architecture.svg", width: 70%))
+#v(0.2em)
+#align(center, text(size: 0.85em)[Rust はモジュール階層に沿って #hl[公開/非公開] を制御でき, AI は勝手に private シンボルを外から import できない．])
 
 // 規模の壁 + ChatGPT解答 (三層構造) は後半「正本を育てる」の三本柱へ移動した．
 

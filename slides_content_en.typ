@@ -322,15 +322,14 @@ Split the huge tensor4all-rs into independent layers with distinct roles.
 
 #v(0.3em)
 Humans design the split structure while discussing with the AI. #hl[Once split, the AI can only operate within each layer and can't break the hierarchy.]
-#ref-text[The layers and API boundaries were decided by analyzing PyTorch / JAX designs (their successes and failures) in detail, together with the AI.]
+#ref-text[The layers and API boundaries were decided by analyzing PyTorch / JAX designs (their successes and failures) in detail, together with the AI.\
+#text(style: "italic")[Jin-Guo Liu (initial tenferro design), Satoshi Terasaki (dev support), tensor4all collaboration (tensor4all-rs development)]]
 
 == Modularizing each layer
 
-The internals of tenferro are modularized too.
-#figimg("figures/fig_crate_split_en.svg", w: 60%)
-//#ref-text[0e3ffa76 (2026-05-26) Refactor crate boundaries without root facade (\#900)]
-In Rust you can finely control symbol visibility along the module hierarchy.
-An AI agent can't import a private symbol from outside on its own.
+#align(center, image("figures/tenferro-architecture.svg", width: 70%))
+#v(0.2em)
+#align(center, text(size: 0.85em)[Rust controls #hl[symbol visibility] along the module hierarchy, so an AI agent can't import a private symbol from outside on its own.])
 
 // 規模の壁 + ChatGPT解答 (三層構造) は後半「正本を育てる」の三本柱へ移動した．
 
