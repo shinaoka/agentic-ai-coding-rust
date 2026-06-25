@@ -76,6 +76,12 @@ Some call the output of agentic coding #hl["AI slop"]:
 #align(center)[The same shift is happening right now with #hl[agentic coding].]
 #align(center)[We are at the stage of figuring out how to realize #hl[ideal agentic coding].]
 
+== Limits of manual (artisan) coding
+#v(0.2em)
+#align(center, image("figures/fig_manual_limits.svg", width: 88%))
+#v(0.2em)
+#align(center, text(size: 0.92em)[$arrow.r$ Both are limits of the #hl[human-powered] model.])
+
 == Today's thesis (overview)
 #align(center)[#block(width: 88%)[
   #set align(center)

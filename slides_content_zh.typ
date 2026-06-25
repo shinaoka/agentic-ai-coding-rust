@@ -76,6 +76,12 @@
 #align(center)[同样的转变正在 #hl[代理式编码].]
 #align(center)[我们正处在思考如何实现 #hl[理想的代理式编码].]
 
+== 手动 (工匠模式) 编码的局限
+#v(0.2em)
+#align(center, image("figures/fig_manual_limits.svg", width: 88%))
+#v(0.2em)
+#align(center, text(size: 0.92em)[$arrow.r$ 两者都是 #hl[依靠人力支撑] 模式的局限.])
+
 == 今天的主张 (概要)
 #align(center)[#block(width: 88%)[
   #set align(center)

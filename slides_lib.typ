@@ -15,6 +15,9 @@
   text(size: 0.8em, fill: muted, body)
 }
 
+// Same gray reference style but inline (no bottom-pinning). Use mid-slide.
+#let ref-text-inline(body) = text(size: 0.8em, fill: muted, body)
+
 // Ponchi-e placeholder: a labeled dashed box describing the sketch to draw later.
 #let ponchi(desc, h: 58%) = align(center + horizon, box(
   width: 90%,
