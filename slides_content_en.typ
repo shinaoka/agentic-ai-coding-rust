@@ -415,8 +415,10 @@ One line for physicists: #hl["a safe C++ + a first-class build/dependency manage
 Speed is C / C++ class, safety is GC-language class.
 
 == Accelerating growth of the ecosystem
-#v(-0.3em)
-#align(center, image("figures/fig_crate_growth.svg", width: 72%))
+#v(-0.4em)
+#align(center, image("figures/fig_crate_growth.svg", width: 56%))
+#v(0.5em)
+#align(center, text(size: 0.85em)[In 2026 NVIDIA released #lk("https://github.com/NVlabs/cuda-oxide", `cuda-oxide`), a Rust CUDA-kernel compiler (experimental).])
 ///#v(-0.2em)
 ///#align(center, text(size: 0.95em)[crates.io: #hl[602 (2015) → 21 万 (2026)]，新規 #hl[5.4 万/年] (2025)．2023 年の「数値計算ライブラリが揃わない」は覆った．])
 ///#ref-text[図: #lk("https://github.com/shinaoka/rust_crate_count", "shinaoka/rust_crate_count") (crates.io DB dump)]

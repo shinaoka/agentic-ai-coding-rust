@@ -417,8 +417,10 @@ AI 编码代理不能从外部擅自 import 私有符号.
 速度是 C / C++ 级, 安全性是 GC 语言级.
 
 == 生态系统的加速增长
-#v(-0.3em)
-#align(center, image("figures/fig_crate_growth.svg", width: 72%))
+#v(-0.4em)
+#align(center, image("figures/fig_crate_growth.svg", width: 56%))
+#v(0.5em)
+#align(center, text(size: 0.85em)[2026 年 NVIDIA 也发布了 Rust 的 CUDA 内核编译器 #lk("https://github.com/NVlabs/cuda-oxide", `cuda-oxide`) (实验阶段).])
 ///#v(-0.2em)
 ///#align(center, text(size: 0.95em)[crates.io: #hl[602 (2015) → 21 万 (2026)]，新規 #hl[5.4 万/年] (2025)．2023 年の「数値計算ライブラリが揃わない」は覆った．])
 ///#ref-text[図: #lk("https://github.com/shinaoka/rust_crate_count", "shinaoka/rust_crate_count") (crates.io DB dump)]
