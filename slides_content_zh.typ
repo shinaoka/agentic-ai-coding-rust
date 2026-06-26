@@ -600,18 +600,21 @@ $arrow.r$ 接下来从 #hl[外部验证] 已培养的正本是否真的有效.
 #align(center, hl[如果正本齐备, 即使第三方 AI 也能读出设计意图.])
 #ref-text[复现用 prompt 是上面的 code block. 目标 repo 是可从外部读取的 public GitHub repo.]
 
-== 那么人类的角色是什么
-#table(columns: (1fr, 1fr), stroke: 0.4pt + gray, inset: 8pt,
-  [*人类*], [*AI 代理*],
-  [拥有值得追求的目标], [快速写代码],
-  [拥有领域知识], [处理实现细节],
-  [设计新算法], [把设计翻译成代码],
-  [#hl[决定验证什么]], [自主运行并修复测试],
-)
-#v(0.3em)
-- 人类的工作主要变成 #hl[提出项目, 设计项目, 验证项目].
-- 人与 AI 的耦合通过 #hl[documents · tests] 发生.
-#ref-text[物理学家是能够“定义”守恒律, 对称性, 极限情况, 解析解的一方.]
+== 把审计自动化: 检测靠 Bot, 修复靠人类
+#v(1fr)
+#align(center)[
+  #set par(leading: 0.9em)
+  #set text(size: 1.2em)
+  正本 + 代码 \
+  #sym.arrow.b \
+  *审计 Bot* 在 private CI 中持续运行 #text(size: 0.8em, fill: muted)[(人类也可运行同一工具)] \
+  #sym.arrow.b \
+  把不一致・bug #hl[自动创建为 Issue] \
+  #sym.arrow.b \
+  *人类* 用 GPT-5.5 #hl[批量修复]
+]
+#v(1fr)
+#ref-text[不把修复完全交给自动化, 是 #hl[责任与选择的问题, 而非可靠性]: 许多 bug 背后可能藏着设计缺陷.]
 
 // ============================================================
 = 教育

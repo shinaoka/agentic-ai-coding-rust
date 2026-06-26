@@ -598,18 +598,21 @@ In my trial, ChatGPT Pro reconstructed the quality control just by reading the r
 #align(center, hl[If the source of truth is in place, even a third-party AI can read the design intent.])
 #ref-text[The prompt is the code block above. The target repos are public GitHub repos readable from outside.]
 
-== So what is the human's role?
-#table(columns: (1fr, 1fr), stroke: 0.4pt + gray, inset: 8pt,
-  [*Human*], [*AI agent*],
-  [Holds a goal worth pursuing], [Writes code fast],
-  [Holds the domain knowledge], [Handles implementation detail],
-  [Designs new algorithms], [Translates the design into code],
-  [#hl[Decides what to verify]], [Runs and fixes tests autonomously],
-)
-#v(0.3em)
-- The human's job becomes mainly #hl[proposing, designing, and verifying the project].
-- The coupling with the AI is through #hl[documents · tests].
-#ref-text[Physicists are the side that can "define" conservation laws, symmetries, limiting cases, and analytic solutions.]
+== Automate the audit: detection by Bot, fixes by humans
+#v(1fr)
+#align(center)[
+  #set par(leading: 0.9em)
+  #set text(size: 1.2em)
+  source of truth + code \
+  #sym.arrow.b \
+  *Audit Bot* runs continuously in private CI #text(size: 0.8em, fill: muted)[(humans can run it too)] \
+  #sym.arrow.b \
+  auto-file #hl[issues] for drift and bugs \
+  #sym.arrow.b \
+  *humans* batch-fix with GPT-5.5
+]
+#v(1fr)
+#ref-text[Not leaving fixes fully to automation is a matter of #hl[responsibility and choice, not reliability]: behind many bugs there can be a design flaw.]
 
 // ============================================================
 = Education
